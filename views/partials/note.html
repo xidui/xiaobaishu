@@ -1,0 +1,40 @@
+<div id="wrapper" ng-controller="Note">
+    <div id="main">
+        <div id="sidebar">
+            <div class="panel">
+                <div class="header">
+                    <span class="col_fade">关于</span>
+                </div>
+                <div class="inner">
+                    <textarea ng-model="content"></textarea>
+                    <div class="action">
+                        <span class="span-common span-success" ng-click="createNote();">发布</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="panel">
+                <div class="cell" ng-repeat="note in notes">
+                    <a class="anchor"></a>
+                    <div class="author_content">
+                        <a href="/user/irooty" class="user_avatar">
+                            <img src="//www.gravatar.com/avatar/5aa4a24d2d04312d0756ab6d0564a053?size=48" title="irooty" height="30" width="30"></a>
+                        <div class="user_info">
+                            <span class="dark reply_time"><a ng-click="delNote(note._id)">删除</a></span>
+                        </div>
+                        <div class="user_info">
+                            <span class="dark reply_time">{{note.create_at}}</span>
+                        </div>
+                    </div>
+                    <div class="reply_content from-irooty">
+                        <div class="markdown-text"><p>{{note.content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

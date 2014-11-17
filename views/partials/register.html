@@ -1,0 +1,66 @@
+<div id="wrapper" ng-controller="Register">
+    <div id="main">
+        <div id="sidebar">
+            <div class="panel">
+                <div class="header">
+                    <span class="col_fade">关于</span>
+                </div>
+                <div class="inner">
+                    <p>我の朝圣路 是用Node.js开发的个人博客</p>
+                    <p>在这里你可以：</p>
+                    <ul>
+                        <li>浏览博主分享的文章</li>
+                        <li>评论博主的文章</li>
+                        <li>申请发表博客的权限</li>
+                        <li>和博主一起进步</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="panel">
+                <div class="header">
+                    <ul class="breadcrumb">
+                        <li><a href="/">主页</a><span class="divider">/</span></li>
+                        <li class="active">注册</li>
+                    </ul>
+                </div>
+                <div class="inner">
+
+                    <form id="signup_form" class="form-horizontal" action="" method="post" ng-submit="send();">
+                        <div class="control-group">
+                            <label class="control-label" for="name">用户名</label>
+                            <div class="controls">
+                                <input class="input-xlarge" id="name" name="name" size="30" type="text" value="" ng-model="name">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="pass">密码</label>
+                            <div class="controls">
+                                <input class="input-xlarge" id="pass" name="pass" size="30" type="password" ng-model="pass">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="re_pass">确认密码</label>
+                            <div class="controls">
+                                <input class="input-xlarge" id="re_pass" name="re_pass" size="30" type="password" ng-model="re_pass">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="email">电子邮箱</label>
+                            <div class="controls">
+                                <input class="input-xlarge" id="email" name="email" size="30" type="text" ng-model="email">
+                            </div>
+                        </div>
+                        <input type="hidden" name="_csrf" value="undefined">
+                        <div class="form-actions">
+                            <input type="submit" class="btn" value="注册">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
