@@ -10,6 +10,8 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
 
+  this.audio = document.getElementById('audio');
+
   this.setup();
 }
 
@@ -42,11 +44,13 @@ GameManager.prototype.setup = function () {
                                 previousState.grid.cells); // Reload grid
     this.score       = previousState.score;
     this.over        = previousState.over;
+    this.persent     = previousState.persent;
     this.won         = previousState.won;
     this.keepPlaying = previousState.keepPlaying;
   } else {
     this.grid        = new Grid(this.size);
     this.score       = 0;
+    this.persent     = 0;
     this.over        = false;
     this.won         = false;
     this.keepPlaying = false;
@@ -91,6 +95,7 @@ GameManager.prototype.actuate = function () {
 
   this.actuator.actuate(this.grid, {
     score:      this.score,
+    persent:    this.persent, 
     over:       this.over,
     won:        this.won,
     bestScore:  this.storageManager.getBestScore(),
@@ -104,6 +109,7 @@ GameManager.prototype.serialize = function () {
   return {
     grid:        this.grid.serialize(),
     score:       this.score,
+    persent:     this.persent, 
     over:        this.over,
     won:         this.won,
     keepPlaying: this.keepPlaying
@@ -132,9 +138,7 @@ GameManager.prototype.move = function (direction) {
   // 0: up, 1: right, 2: down, 3: left
   var self = this;
 
-  if (this.isGameTerminated()) {
-      return;
-  } // Don't do anything if the game's over
+  if (this.isGameTerminated()) return; // Don't do anything if the game's over
 
   var cell, tile;
 
@@ -183,13 +187,22 @@ GameManager.prototype.move = function (direction) {
   });
 
   if (moved) {
+    this.audio.play();
+      
     this.addRandomTile();
 
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
     }
 
+    var score = this.serialize().score;
+    var temp = this;
+    $.post("/games/ratio", {"score" : score}, function(data){
+        temp.persent = eval(data);
+    });
+
     this.actuate();
+
     if (this.isGameTerminated())
     {
         var score = this.serialize().score;

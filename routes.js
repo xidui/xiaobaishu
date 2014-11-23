@@ -28,7 +28,8 @@ module.exports = function (app) {
     app.get('/games/:game', function (req, res){
         res.render('games/' + req.params.game);
     });
-    app.post('/games/result', g2048.getRatio);
+    app.post('/games/result', g2048.getRatioAndInsert);
+    app.post('/games/ratio', g2048.getRatio);
 
     app.post('/register', sign.register);
     app.post('/login', sign.login);

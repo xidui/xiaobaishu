@@ -1,6 +1,7 @@
 function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
+  this.persentContainer   = document.querySelector(".persent-container");
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
 
@@ -22,6 +23,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
     });
 
     self.updateScore(metadata.score);
+    self.updatePersent(metadata.persent);
     self.updateBestScore(metadata.bestScore);
 
     if (metadata.terminated) {
@@ -118,6 +120,10 @@ HTMLActuator.prototype.updateScore = function (score) {
 
     this.scoreContainer.appendChild(addition);
   }
+};
+
+HTMLActuator.prototype.updatePersent = function (persent) {
+  this.persentContainer.textContent = persent;
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
