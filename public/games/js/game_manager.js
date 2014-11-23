@@ -207,8 +207,8 @@ GameManager.prototype.move = function (direction) {
     {
         var score = this.serialize().score;
         $.post("/games/result", {"score" : score}, function(data){
-            $('title').text('你得了' + score + '分!击败了全国百分之' + data.toString() + '的玩家!');
-            $('abc').text('你得了' + score + '分!击败了全国百分之' + data.toString() + '的玩家!');
+            $('title').text('你得了' + score + '分!击败了百分之' + data.toString() + '的玩家!');
+            $('abc').text('你得了' + score + '分!击败了百分之' + data.toString() + '的玩家!');
         });
     }
   }
