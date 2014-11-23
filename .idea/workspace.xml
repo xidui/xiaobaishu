@@ -41,10 +41,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_manager.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game_manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/games/js/game_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="6" selection-start="5523" selection-end="5523" vertical-scroll-proportion="0.4660767" vertical-offset="2692" max-vertical-offset="4530">
+            <state line="190" column="6" selection-start="5523" selection-end="5523" vertical-scroll-proportion="0.0" vertical-offset="2692" max-vertical-offset="4530">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2048.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/2048.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="38" selection-start="270" selection-end="270" vertical-scroll-proportion="0.369863" vertical-offset="0" max-vertical-offset="365">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="42" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -99,8 +117,6 @@
         <option value="$PROJECT_DIR$/public/js/controller/note.js" />
         <option value="$PROJECT_DIR$/controllers/note.js" />
         <option value="$PROJECT_DIR$/proxy/note.js" />
-        <option value="$PROJECT_DIR$/models/2048.js" />
-        <option value="$PROJECT_DIR$/models/index.js" />
         <option value="$PROJECT_DIR$/proxy/2048_p.js" />
         <option value="$PROJECT_DIR$/proxy/index.js" />
         <option value="$PROJECT_DIR$/routes.js" />
@@ -109,6 +125,8 @@
         <option value="$PROJECT_DIR$/public/games/style/main.css" />
         <option value="$PROJECT_DIR$/views/games/2048.html" />
         <option value="$PROJECT_DIR$/public/games/js/game_manager.js" />
+        <option value="$PROJECT_DIR$/models/index.js" />
+        <option value="$PROJECT_DIR$/models/2048.js" />
       </list>
     </option>
   </component>
@@ -203,69 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaobaishu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaobaishu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="games" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaobaishu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaobaishu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="games" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaobaishu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiaobaishu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="games" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,6 +246,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.xiaobaishu">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -300,23 +264,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -366,7 +322,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="714" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -495,11 +451,6 @@
         <state line="28" column="13" selection-start="921" selection-end="921" vertical-scroll-proportion="0.3770883" vertical-offset="262" max-vertical-offset="720" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="17" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.16309012" vertical-offset="1154" max-vertical-offset="1620" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/others.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="72" selection-start="423" selection-end="423" vertical-scroll-proportion="0.35407725" vertical-offset="0" max-vertical-offset="466" />
@@ -605,16 +556,6 @@
         <state line="31" column="23" selection-start="793" selection-end="793" vertical-scroll-proportion="0.31105992" vertical-offset="330" max-vertical-offset="960" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/2048.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/note.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="467" selection-end="467" vertical-scroll-proportion="0.5529954" vertical-offset="0" max-vertical-offset="434" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/games/js/keyboard_input_manager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="122" column="38" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.295302" vertical-offset="1654" max-vertical-offset="2250">
@@ -625,11 +566,6 @@
     <entry file="file://$PROJECT_DIR$/proxy/2048_p.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="2" selection-start="235" selection-end="235" vertical-scroll-proportion="0.25167784" vertical-offset="0" max-vertical-offset="596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes.js">
@@ -678,7 +614,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/games/js/game_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="6" selection-start="5523" selection-end="5523" vertical-scroll-proportion="0.4660767" vertical-offset="2692" max-vertical-offset="4530">
+        <state line="190" column="6" selection-start="5523" selection-end="5523" vertical-scroll-proportion="0.0" vertical-offset="2692" max-vertical-offset="4530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/note.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="35" selection-start="467" selection-end="467" vertical-scroll-proportion="0.65753424" vertical-offset="0" max-vertical-offset="365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="67" selection-start="2208" selection-end="2208" vertical-scroll-proportion="3.9041095" vertical-offset="0" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="42" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/2048.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="270" selection-end="270" vertical-scroll-proportion="0.369863" vertical-offset="0" max-vertical-offset="365">
           <folding />
         </state>
       </provider>

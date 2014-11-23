@@ -15,4 +15,4 @@ require('./2048');
 
 exports.User = mongoose.model('User');
 exports.Note = mongoose.model('Note');
-exports.G2048 = mongoose.model('G2048');
+exports.G2048 = mongoose.model('G2048_2');

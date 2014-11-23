@@ -4,10 +4,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var G2048Schema = new Schema({
+var G2048_2Schema = new Schema({
     score: { type: Number, default: 0 },
     create_at: { type: Date, default: Date.now },
     update_at: { type: Date, default: Date.now }
 });
 
-mongoose.model('G2048', G2048Schema);
+mongoose.model('G2048_2', G2048_2Schema);
