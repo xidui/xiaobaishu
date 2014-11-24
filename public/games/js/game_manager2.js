@@ -10,7 +10,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
 
-  this.audio = document.getElementById('audio');
+//  this.audio = document.getElementById('audio');
 
   this.setup();
 }
@@ -187,8 +187,11 @@ GameManager.prototype.move = function (direction) {
   });
 
   if (moved) {
-    this.audio.play();
-      
+//    this.audio.play();
+    var music = "<embed id='player' src='media/sound.wav' style='visibility: hidden'></embed>";
+    $('music').text("");
+    $('music').append(music);
+
     this.addRandomTile();
 
     if (!this.movesAvailable()) {
